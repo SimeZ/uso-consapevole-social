@@ -1,7 +1,15 @@
-body {
-  // Default font-family
+.page-title {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 0.2rem;
+  font-size: 2.5rem;
+  transition: all 0.3s;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
 }
 
-.page__title {
-  color: var(--primary-color);
+.highlight-text {
+  background-color: var(--primary-color--light);
 }

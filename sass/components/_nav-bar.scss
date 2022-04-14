@@ -1,0 +1,38 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  & ion-icon {
+    font-size: 4rem;
+    filter: invert(72%) sepia(51%) saturate(434%) hue-rotate(178deg)
+      brightness(101%) contrast(105%);
+  }
+
+  & menu {
+    display: inline-flex;
+    list-style: none;
+    gap: 1.5rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    & li {
+      font-size: 1.8rem;
+      transition: all 0.3s;
+      color: rgb(110, 110, 110);
+
+      &:hover {
+        transform: rotate(-5deg) scale(1.1);
+        background-color: var(--primary-color--light);
+      }
+    }
+  }
+}
+
+.contact {
+  @include respond(tab-port) {
+    display: none;
+  }
+}

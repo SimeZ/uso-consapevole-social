@@ -1,6 +1,7 @@
 :root {
   // Colors
   --primary-color: #1da1f2;
+  --primary-color--light: #96d7ff;
 }
 
 /* Box sizing rules */
@@ -27,6 +28,7 @@ a {
 /* Set core root defaults */
 html {
   font-size: 62.5%;
+  @include main-font;
   scroll-behavior: smooth;
 }
 
